@@ -57,7 +57,11 @@ If you prefer to install the dependencies individually, run the following comman
 python3.10 -m venv _venv
 source _venv/bin/activate
 
-pip install gradio==4.13.0 langchain==0.0.354 openai==0.28.0 chromadb==0.4.22 pypdf==3.17.4 pandas==2.1.4
+pip install gradio==4.13.0 langchain==0.0.354 openai==0.28.0 chromadb==0.4.22 pypdf==3.17.4 pandas==2.1.4 pyprojroot
+pip install pysqlite3-binary
+
+# confirm the SQLite version being used by this specific Python environment:
+python -c "import sqlite3; print(sqlite3.sqlite_version)"
 ```
 
 1. **Configuration and Execution**
