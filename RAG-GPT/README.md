@@ -53,7 +53,10 @@ Follow the instruction on the [parent directory](https://github.com/Farzad-R/LLM
 ### Option 2: Installing Dependencies Individually
 If you prefer to install the dependencies individually, run the following command:
 
-```
+```sh
+python3.10 -m venv _venv
+source _venv/bin/activate
+
 pip install gradio==4.13.0 langchain==0.0.354 openai==0.28.0 chromadb==0.4.22 pypdf==3.17.4 pandas==2.1.4
 ```
 
